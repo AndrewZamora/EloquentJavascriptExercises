@@ -1,4 +1,5 @@
+var string = "########";
 
-for (let i = 0; i <= 7; i++) {
-    console.log("#");
+for (var i = 0; i < string.length; i++) {
+    console.log(string.slice(0,i));
 }
