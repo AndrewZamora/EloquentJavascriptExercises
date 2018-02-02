@@ -18,12 +18,16 @@
 // size = 8 and change the program so that it works for any size, outputting
 // a grid of the given width and height.
 
-for (let i = 0; i < 5 ; i++) {
-    var fuckshitdamn = "";
+for (let i = 0; i < 8 ; i++) {
+    var output = "";
     for (var j = 0; j < 8; j++){
-        fuckshitdamn += "#";
+        if (j % 2 !== 0) {
+            output += " ";
+        } else {
+            output += "#";
+        }  
     }
-    console.log(fuckshitdamn);
+    console.log(output);
 }
 
 
