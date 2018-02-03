@@ -19,18 +19,15 @@
 // a grid of the given width and height.
 
 var output = "";
-for (var i = 0; i < 10; i++) {
+var chessSize = 8;
+for (var i = 0; i < chessSize; i++) {
     if (i % 2 == 0) {
         output += "#";
-    }
+    } else {
         output += " ";
+    }    
 }
-for(var j=0; j<10; j++){
+for (var j = 0; j < chessSize/2; j++) {
+    console.log(" " + output);
     console.log(output);
-    console.log(" "+ output);
 }
-
-
-// 0 = 0 1= na 2=0  3=na  4
-// 5 = na 6= 0  7=na  8= 0  9= na
-// 10= 0 11= na 12=0 13=na 14
