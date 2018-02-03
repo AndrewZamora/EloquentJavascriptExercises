@@ -18,19 +18,19 @@
 // size = 8 and change the program so that it works for any size, outputting
 // a grid of the given width and height.
 
-for (let i = 0; i < 8 ; i++) {
-    var output = "";
-    for (var j = 0; j < 8; j++){
-        if (j % 2 !== 0) {
-            output += " ";
-        } else {
-            output += "#";
-        }  
+var output = "";
+for (var i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        output += "#";
     }
+        output += " ";
+}
+for(var j=0; j<10; j++){
     console.log(output);
+    console.log(" "+ output);
 }
 
 
-
-
-      
+// 0 = 0 1= na 2=0  3=na  4
+// 5 = na 6= 0  7=na  8= 0  9= na
+// 10= 0 11= na 12=0 13=na 14
